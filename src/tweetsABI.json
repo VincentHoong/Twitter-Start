@@ -1,23 +1,5 @@
 [
 	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "tweetTxt",
-				"type": "string"
-			},
-			{
-				"internalType": "string",
-				"name": "tweetImg",
-				"type": "string"
-			}
-		],
-		"name": "addTweet",
-		"outputs": [],
-		"stateMutability": "payable",
-		"type": "function"
-	},
-	{
 		"inputs": [],
 		"stateMutability": "nonpayable",
 		"type": "constructor"
@@ -40,18 +22,36 @@
 			{
 				"indexed": false,
 				"internalType": "string",
-				"name": "tweetTxt",
+				"name": "tweetText",
 				"type": "string"
 			},
 			{
 				"indexed": false,
 				"internalType": "string",
-				"name": "tweetImg",
+				"name": "tweetImage",
 				"type": "string"
 			}
 		],
-		"name": "tweetCreated",
+		"name": "TweetCreated",
 		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "tweetText",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "tweetImage",
+				"type": "string"
+			}
+		],
+		"name": "addTweet",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
 	},
 	{
 		"inputs": [
